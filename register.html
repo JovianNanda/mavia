@@ -8,67 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <style>
-      * {
-        font-family: 'Poppins', sans-serif;
-      }
-      .wrapper {
-        height: 100vh;
-        display: flex;
-      }
-      .wrapper > * {
-        height: 100vh;
-      }
-      .bg-gradient {
-        width: 40%;
-        background: linear-gradient(225deg, rgba(255,192,203,1) 0%, rgba(192,214,255,1) 37%, rgba(255,192,245,1) 95%) !important;
-      }
-      .bg-gradient > div {
-        width: 80%;
-        height: 400px;
-        background: rgba(255,255,255,0.2);
-        padding: 4rem;
-        padding-right: 7rem;
-      }
-      .form {
-        width: 60%;
-        padding: 2rem;
-        padding-left: 5rem;
-        padding-right: 18rem;
-      }
-      .form h1 {
-        font-weight: bold;
-      }
-      .hover-underline:hover {
-        text-decoration: underline !important;
-      }
-      .password-visibility {
-        position: relative;
-      }
-      .password-visibility input[type=password] {
-        padding: 0.375rem 2.25rem 0.375rem 1rem;
-      }
-      .password-visibility svg {
-        width: 16px;
-        height: 12px;
-        position: absolute;
-        right: 1rem;
-        top: calc(50% - (12px/2));
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="login-register.css">
   </head>
   <body>
 
-    <div class="wrapper">
+    <div class="wrapper row justify-content-center">
       <!-- Gambar gradient -->
-      <div class="bg-gradient d-flex justify-content-center align-items-center">
+      <div class="bg-gradient col-md-5 d-flex justify-content-center align-items-center">
         <div></div>
       </div>
       <!--  -->
 
       <!-- Form section -->
-      <form action="#" class="form">
+      <form action="#" class="form col-md-7">
         <h1 class="mb-4">Join to Mavia</h1>
         <!-- First name field -->
         <div class="mb-3">

@@ -1,0 +1,63 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+  margin: 0;
+}
+.wrapper > * {
+  min-height: 100vh;
+}
+.bg-gradient {
+  /*width: 40%;*/
+  background: linear-gradient(225deg, rgba(255,192,203,1) 0%, rgba(192,214,255,1) 37%, rgba(255,192,245,1) 95%) !important;
+}
+.bg-gradient > div {
+  width: 80%;
+  height: 400px;
+  background: rgba(255,255,255,0.2);
+  padding: 4rem;
+  padding-right: 7rem;
+}
+.form {
+  /*width: 60%;*/
+  padding: 4rem;
+  padding-left: 5rem;
+  padding-right: 18rem;
+}
+.form h1 {
+  font-weight: bold;
+}
+.hover-underline:hover {
+  text-decoration: underline !important;
+}
+.password-visibility {
+  position: relative;
+}
+.password-visibility input[type=password] {
+  padding: 0.375rem 2.25rem 0.375rem 1rem;
+}
+.password-visibility svg {
+  width: 16px;
+  height: 12px;
+  position: absolute;
+  right: 1rem;
+  top: calc(50% - (12px/2));
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .bg-gradient {
+    display: none !important;
+  }
+  .form {
+    padding: 3rem;
+  }
+}
+@media (max-width: 425px) {
+  .form {
+    padding: 3rem 2rem;
+  }
+}
+.flex-wrap {
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
