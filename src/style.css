@@ -2,43 +2,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.modal-enter-active,
-.modal-leave-active {
-  transition: all 150ms ease;
-}
-
-.modal-leave-active {
-  /* transition-delay: 400ms; */
-}
-
-.modal-enter-from,
-.modal-leave-to {
-  opacity: 0;
-  transform: scale(1.10);
-}
-
-.modal-enter-active .modal-box,
-.modal-leave-active .modal-box {
-  transition: all 150ms ease-in-out;
-}
-
 .no-link {
   text-decoration: none;
   color: #000;
 }
 
-/* .modal-enter-active .modal-box {
-  transition-delay: 200ms;
+.cursor-pointer {
+  cursor: pointer;
 }
-
-.modal-enter-from .modal-box,
-.modal-leave-to .modal-box {
-  opacity: 0;
-  transform: translateY(-48px);
-}
-
-.modal-enter-to .modal-box,
-.modal-leave-from .modal-box {
-  opacity: 1;
-  transform: translateY(0);
-} */
