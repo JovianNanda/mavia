@@ -1,0 +1,92 @@
+.discussion {
+    @include card(45rem, $primary-500, white);
+    padding: 1rem 1.5rem;
+
+    .discussion-title {
+        @include mp-0;
+
+        * {
+            @include mp-0;
+            font-size: 1.2rem;
+        }
+    }
+
+    .discussion-description {
+        p {
+            color: $secondary;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            margin-top: 0.5rem;
+        }
+        img {
+            padding: 1rem 1rem 1.5rem 1rem;
+        }
+    }
+
+    @mixin discussion-footer {
+        @include mp-0;
+        @include flex-row;
+        gap: 0.5rem;
+        align-items: center;
+        max-height: 1.5rem;
+
+        p {
+            font-weight: 500;
+            font-size: 0.75rem;
+        }
+    }
+
+    .discussion-footer {
+        @include mp-0;
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%;
+
+        .action {
+            @include flex-row;
+            gap: 2rem;
+
+            .comment {
+                @include discussion-footer;
+                cursor: pointer;
+            }
+            .like {
+                @include discussion-footer;
+                cursor: pointer;
+            }
+        }
+
+        .user {
+            @include flex-row;
+            align-items: center;
+            gap: 0.5rem;
+
+            .text {
+                @include flex-column;
+                font-size: 0.75rem;
+                // color: $dark-gray;
+
+                p {
+                    @include mp-0;
+                    font-weight: 500;
+
+                    &.username {
+                        // color: $dark-gray;
+                    }
+                    &.uploaded {
+                        // color: $mid-gray;
+                    }
+                }
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@mixin mp-0 {
+    margin: 0;
+    padding: 0;
+}
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin card($max-width, $color, $bg) {
+    @include flex-column;
+    align-items: flex-start;
+    padding: 0.6rem 1rem;
+    border-radius: 0.6rem;
+    max-width: $max-width;
+    background-color: $bg;
+    color: $color;
+}
+@mixin sidebar-background-pink {
+    content: "";
+    position: absolute;
+    left: -7%;
+    display: block;
+    border-radius: 22.5px;
+    width: 110%;
+    height: 45px;
+    background: linear-gradient(89.93deg, rgba(248, 108, 174, 0.27) 2.77%, rgba(248, 108, 174, 0) 109.06%);
+}
