@@ -47,7 +47,6 @@ nav {
         width: $sidebar-width;
         padding: 1rem;
         position: fixed;
-        border: 1px solid rgba($primary, 0.35);
 
         .sidebar-header {
             display: flex;
@@ -181,10 +180,9 @@ nav {
         display: flex;
         justify-content: space-between;
         padding: 1rem;
-        border: 1px solid rgba($primary, 0.35);
-        border-left: none;
-        background-color: white;
+        background-color: #fff;
         position: relative;
+        z-index: 11;
 
         .nav-left {
             width: 50%;
@@ -234,7 +232,6 @@ nav {
     &.category-bar {
         position: fixed;
         top: 5.5rem;
-        border: 1px solid rgba($primary, 0.35);
         right: 0;
         width: $categorybar-width;
         height: 100vh;
