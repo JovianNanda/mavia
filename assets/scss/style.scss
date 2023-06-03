@@ -232,11 +232,13 @@ nav {
     &.category-bar {
         position: fixed;
         top: 5.5rem;
-        right: 0;
+        right: 0.15rem;
         width: $categorybar-width;
-        height: 100vh;
+        height: 80vh;
         background-color: white;
         padding: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
 
         h1 {
             color: $primary;
@@ -253,6 +255,6 @@ main {
 
 // Content
 .content {
-    margin-right: 20vw;
+    margin-right: 13.5rem;
     padding: 1rem;
 }
